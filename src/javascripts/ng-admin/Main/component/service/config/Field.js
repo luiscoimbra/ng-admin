@@ -3,7 +3,6 @@ define(function (require) {
 
     var Configurable = require('ng-admin/Main/component/service/config/Configurable');
     var availableTypes = ['number', 'string', 'text', 'wysiwyg', 'email', 'date', 'callback'];
-    var availableEditions = ['read-only', 'editable'];
 
     var defaultValueTransformer = function(value) {
         return value;
@@ -17,7 +16,7 @@ define(function (require) {
         name: 'myField',
         type: 'string',
         label: 'My field',
-        edition : 'editable',
+        editable : true,
         order: null,
         identifier : false,
         format : 'yyyy-MM-dd',
