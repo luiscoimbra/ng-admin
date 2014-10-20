@@ -212,7 +212,7 @@ define(function(require) {
                     angular.forEach(fields, function(field, fieldName) {
 
                         if (field.type() === 'callback') {
-                            entity.getField(fieldName).value = field.getCallbackValue(rawEntity);
+                            entity.getField(fieldName).value = field.getCallbackValue(rawEntity, "list");
                         }else if (field.name() in rawEntity) {
                             entity.getField(fieldName).value = field.valueTransformer()(rawEntity[field.name()]);
                         }

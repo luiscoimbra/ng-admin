@@ -121,8 +121,8 @@ define(function (require) {
       *
       * @returns mixed
       */
-    Field.prototype.getCallbackValue = function(data) {
-        return this.callback()(data);
+    Field.prototype.getCallbackValue = function(data, viewType) {
+        return this.callback()(data, viewType);
     };
 
     /**
