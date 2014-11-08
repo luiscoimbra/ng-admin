@@ -173,7 +173,7 @@
             );
 
         var app = new Application('ng-admin backend demo')
-            .baseApiUrl('http://localhost:3000/')
+            .baseApiUrl('http://localhost:3001/')
             .addEntity(post)
             .addEntity(comment)
             .addEntity(tag);
